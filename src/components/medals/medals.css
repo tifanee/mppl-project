@@ -1,0 +1,52 @@
+.spirit__medals {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #F3D9D9;
+}
+
+.spirit__klasemen-department {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spirit__klasemen-department img {
+    width: 100px;
+    height: 100px;
+
+    margin-right: 1.5rem;
+}
+
+.spirit__medals p {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.spirit__klasemen-medals {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.spirit__klasemen-medals div {
+    margin-left: 5rem;
+    width: 90px;
+}
+
+.spirit__medal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spirit__medal-count {
+    position: absolute;
+    font-weight: 600;
+    color: #000000;
+}

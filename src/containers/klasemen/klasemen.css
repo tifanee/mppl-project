@@ -1,0 +1,20 @@
+.spirit__klasemen {
+    display: flex;
+    flex-direction: column;
+}
+
+.spirit__klasemen-heading {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 2rem 0;
+}
+
+.spirit__klasemen-heading h1 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+}

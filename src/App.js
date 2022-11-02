@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
-function App() {
+import { Navbar } from './components'
+import './App.css'
+
+import Home from './pages/Home'
+import Klasemen from './pages/Klasemen'
+import Kompetisi from './pages/Kompetisi'
+import Kontingen from './pages/Kontingen'
+
+import KompetisiOlahraga from './pages/KompetisiOlahraga'
+import KompetisiSeni from './pages/KompetisiSeni'
+import PressRelease from './pages/PressRelease'
+import ContactUs from './pages/ContactUs'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div className='navbar__bg'>
+        <Navbar />
+      </div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/kompetisi' element={<Kompetisi />}/>
+        <Route path='/kontingen' element={<Kontingen />}/>
+        <Route path='/klasemen' element={<Klasemen />} />
+        <Route path='/press-release' element={<PressRelease />}/>
+        <Route path='/contact-us' element={<ContactUs />}/>
+
+        <Route path='/kompetisi-olahraga' element={<KompetisiOlahraga />} />
+        <Route path='/kompetisi-seni' element={<KompetisiSeni />} />
+      </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

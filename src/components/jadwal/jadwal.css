@@ -1,0 +1,63 @@
+.spirit__jadwal,
+.spirit__jadwal-date {
+    display: flex;
+    flex-direction: column;
+
+    font-family: var(--font-family);
+    color: #FFFFFF;
+}
+
+.spirit__jadwal-date h2 {
+    margin-bottom: 2rem;
+}
+
+.spirit__jadwal-heading {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 2rem 0;
+}
+
+.spirit__jadwal-heading h1 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+}
+
+.spirit__jadwal-date {
+    margin-top: 2rem;
+}
+
+.spirit__jadwal-date h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+}
+
+.spirit__jadwal-content {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 3rem;
+}
+
+.spirit__jadwal-time {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+
+    margin-right: 2rem;
+}
+
+.spirit__jadwal-time h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+}
+
+.spirit__jadwal-container {
+    flex: 6;
+}
