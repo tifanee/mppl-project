@@ -15,6 +15,7 @@ import PressRelease from './pages/PressRelease'
 import ContactUs from './pages/ContactUs'
 
 const App = () => {
+
   return (
     <div className='App'>
       <div className='navbar__bg'>

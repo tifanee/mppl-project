@@ -63,7 +63,7 @@ const Kompetisi = () => {
                       <h2>{item.type}</h2>
                     </div>
                     <div className='spirit__kompetisi-article'>
-                      <Article text={item.text} contentImage={item.kompetisiImage} contentLink={item.contentLink} />
+                      <Article text={item.text} contentImage={item.kompetisiImage} contentLink={item.contentLink} key={item.type} />
                     </div>
                   </>
                 )}

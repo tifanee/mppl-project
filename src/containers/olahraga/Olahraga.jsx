@@ -65,7 +65,7 @@ const Olahraga = () => {
         <div className='spirit__kompetisi-container'>
           <Slider {...settings}>
             {olahragaData.map((item, index) => (
-              <KometisiList kompetisiImage={item.olahragaImage} kompetisiName={item.olahragaName} />
+              <KometisiList kompetisiImage={item.olahragaImage} kompetisiName={item.olahragaName} key={item.olahragaName} />
             ))}
           </Slider>
         </div>
