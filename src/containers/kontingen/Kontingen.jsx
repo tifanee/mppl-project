@@ -49,8 +49,8 @@ const departmentData = [
 
 const Kontingen = () => {
   return (
-    <div className='spirit__kontingen section__padding' id='kontingen'>
-      <div className='spirit__kontingen-heading'>
+    <div className='spirit__content section__padding' id='kontingen'>
+      <div className='spirit__heading'>
         <h1>KONTINGEN</h1>
       </div>
       <div className='spirit__kontingen-container'>

@@ -73,8 +73,8 @@ const klasemenMedalData = [
 
 const MedalTable = () => {
   return (
-    <div className='spirit__klasemen_medalTable section__padding' id='medalTable'>
-        <div className='spirit__klasemen-heading_medalTable'>
+    <div className='spirit__content section__padding' id='medalTable'>
+        <div className='spirit__heading'>
           <h1>KLASEMEN</h1>
         </div>
         <div className='spirit__klasemen_medalTable-result'>
@@ -89,18 +89,9 @@ const MedalTable = () => {
                     <p>Total</p>
                 </div>
             </div>
-            <div className='spirit__klasemen_medalTable-body'>
-                {klasemenMedalData.sort((a, b) => (b.goldMedal - a.goldMedal)).map((item, index) => (
-                    <Medals 
-                        departmentImage={item.departmentImage} 
-                        departmentName={item.departmentName}
-                        goldMedal={item.goldMedal}
-                        silverMedal={item.silverMedal}
-                        bronzeMedal={item.bronzeMedal}
-                        totalMedal={item.totalMedal}
-                    />
-                ))}
-            </div>
+            {klasemenMedalData.sort((a, b) => (b.goldMedal - a.goldMedal)).map((data) => (
+                <Medals data={data}/>
+            ))}
         </div>
     </div>
   )

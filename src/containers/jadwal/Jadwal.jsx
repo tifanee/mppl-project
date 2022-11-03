@@ -1,8 +1,8 @@
 import React from 'react'
 import './jadwal.css'
 
-import { H2H } from '../index'
-import { g1, g2, g3, g4, g5, g6, g7, g8 } from '../department/imports'
+import { H2H } from '../../components/index'
+import { g1, g2, g3, g4, g5, g6, g7, g8 } from '../../components/department/imports'
 
 const jadwalData = [
   {
@@ -64,8 +64,8 @@ const jadwalData = [
 const jadwal = () => {
 
   return (
-    <div className='spirit__jadwal section__padding' id='jadwal'>
-      <div className="spirit__jadwal-heading">
+    <div className='spirit__content section__padding' id='jadwal'>
+      <div className="spirit__heading">
           <h1>JADWAL</h1>
       </div>
       <div className='spirit__jadwal-date'>

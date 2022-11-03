@@ -58,11 +58,11 @@ const Olahraga = () => {
   }
 
   return (
-    <div className='spirit__kompetisi_olahraga' id='olahraga'>
-        <div className='spirit__kompetisi-heading_olahraga'>
+    <div className='spirit__content section__padding' id='olahraga'>
+        <div className='spirit__heading'>
             <h1>OLAHRAGA</h1>
         </div>
-        <div className='spirit__kompetisi_olahraga-container section__padding'>
+        <div className='spirit__kompetisi-container'>
           <Slider {...settings}>
             {olahragaData.map((item, index) => (
               <KometisiList kompetisiImage={item.olahragaImage} kompetisiName={item.olahragaName} />

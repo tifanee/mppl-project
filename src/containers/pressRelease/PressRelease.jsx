@@ -14,8 +14,8 @@ const pressReleaseData = [
 
 const PressRelease = () => {
   return (
-    <div className='spirit__pressRelease section__padding' id='pressRelease'>
-      <div className='spirit__pressRelease-heading'>
+    <div className='spirit__content section__padding' id='pressRelease'>
+      <div className='spirit__heading'>
           <h1>PRESS RELEASE</h1>
       </div>
       {pressReleaseData.map((item, index) => (

@@ -58,11 +58,11 @@ const Seni = () => {
     }
 
     return (
-        <div className='spirit__kompetisi_seni section__padding' id='seni'>
-            <div className='spirit__kompetisi-heading_seni'>
+        <div className='spirit__content section__padding' id='seni'>
+            <div className='spirit__heading'>
                 <h1>SENI</h1>
             </div>
-            <div className='spirit__kompetisi_seni-container section__padding'>
+            <div className='spirit__kompetisi-container'>
                 <Slider {...settings}>
                     {seniData.map((item, index) => (
                         <KometisiList kompetisiImage={item.seniImage} kompetisiName={item.seniName} />

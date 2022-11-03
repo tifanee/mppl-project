@@ -46,8 +46,8 @@ const Kompetisi = () => {
   }
 
   return (
-    <div className='spirit__kompetisi section__padding' id='kompetisi'>
-      <div className='spirit__kompetisi-heading'>
+    <div className='spirit__content section__padding' id='kompetisi'>
+      <div className='spirit__heading'>
         <h1>KOMPETISI</h1>
       </div>
 

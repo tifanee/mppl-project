@@ -1,25 +1,3 @@
-.spirit__kontingen {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.spirit__kontingen-heading {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin: 2rem 0;
-}
-
-.spirit__kontingen-heading h1 {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 73px;
-}
-
 .spirit__kontingen-container {
     flex: 1;
     display: grid;

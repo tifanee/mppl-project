@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+
+    font-family: var(--font-family);
+    color: #ffffff;
 }
 
 body {
@@ -33,6 +36,39 @@ a {
 .scale-up-center {
 	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.spirit__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.spirit__heading {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 2rem 0;
+}
+
+.spirit__heading h1 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+}
+
+.spirit__kompetisi-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 6rem;
+    padding-right: 6rem;
+
+    margin-top: 2rem;
 }
 
 @-webkit-keyframes scale-up-center {

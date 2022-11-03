@@ -1,24 +1,3 @@
-.spirit__klasemen_medalTable {
-    display: flex;
-    flex-direction: column;
-}
-
-.spirit__klasemen-heading_medalTable {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin: 2rem 0;
-}
-
-.spirit__klasemen-heading_medalTable h1 {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 73px;
-}
-
 .spirit__klasemen_medalTable-result {
     flex: 1;
     display: flex;
@@ -37,7 +16,6 @@
 }
 
 .spirit__klasemen_medalTable-heading p {
-    font-family: var(--font-family);
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;

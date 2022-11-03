@@ -14,8 +14,8 @@ const klasemenData = [
 
 const Klasemen = () => {
   return (
-    <div className='spirit__klasemen section__padding' id='klasemen'>
-      <div className='spirit__klasemen-heading'>
+    <div className='spirit__content section__padding' id='klasemen'>
+      <div className='spirit__heading'>
           <h1>KLASEMEN</h1>
       </div>
       {klasemenData.map((item, index) => (
