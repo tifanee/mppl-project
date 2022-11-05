@@ -13,7 +13,7 @@ const Slider = () => {
         <div className='slider-container'>
             {sliderData.map((obj, index) => {
                 return (
-                    <div key={obj.sliderImage} className={slideIndex === index + 1 ? 'slide active-anim' : 'slide'}>
+                    <div key={obj.sliderImage} className={slideIndex === index + 1 ? 'slide active-anim' : 'slide'} >
                         <img src={obj.sliderImage} />
                     </div>
                 )
@@ -24,7 +24,9 @@ const Slider = () => {
                     <div 
                         onClick={() => moveDot(index + 1)}
                         className={slideIndex === index + 1 ? "dot active" : "dot"}
-                    ></div>
+                        key={index + 1}
+                    >
+                    </div>
                 ))}
             </div>
         </div>

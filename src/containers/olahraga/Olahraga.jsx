@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Slider from 'react-slick'
 
 import './olahraga.css'
@@ -11,15 +11,15 @@ import { tes1, tes2, tes3, tes4, tes5, tes6, tes7, tes8, tes9} from '../../asset
 const olahragaData = [
   {
     olahragaImage: tes1,
-    olahragaName: 'Olahraga 1'
+    olahragaName: 'Basket'
   },
   {
     olahragaImage: tes2,
-    olahragaName: 'Olahraga 2'
+    olahragaName: 'Futsal'
   },
   {
     olahragaImage: tes3,
-    olahragaName: 'Olahraga 3'
+    olahragaName: 'Bulu Tangkis'
   },
   {
     olahragaImage: tes4,
@@ -47,7 +47,13 @@ const olahragaData = [
   }
 ]
 
-const Olahraga = () => {
+const Olahraga = ({ getKompetisiTag }) => {
+
+  const [kompetisiTag, setKompetisiTag] = useState('')
+  
+  useEffect(() => {
+    getKompetisiTag(kompetisiTag)
+  }, [getKompetisiTag, kompetisiTag])
 
   let settings = {
     infinite: true,
@@ -65,7 +71,12 @@ const Olahraga = () => {
         <div className='spirit__kompetisi-container'>
           <Slider {...settings}>
             {olahragaData.map((item, index) => (
-              <KometisiList kompetisiImage={item.olahragaImage} kompetisiName={item.olahragaName} key={item.olahragaName} />
+              <KometisiList 
+                kompetisiImage={item.olahragaImage} 
+                kompetisiName={item.olahragaName} 
+                kompetisiPropTag={setKompetisiTag}
+                key={item.olahragaName}
+              />
             ))}
           </Slider>
         </div>

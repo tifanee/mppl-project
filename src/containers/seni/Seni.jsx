@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Slider from 'react-slick'
 
 import './seni.css'
@@ -11,15 +11,15 @@ import { tes1, tes2, tes3, tes4, tes5, tes6, tes7, tes8, tes9} from '../../asset
 const seniData = [
     {
         seniImage: tes1,
-        seniName: 'Seni 1'
+        seniName: 'Poster'
     },
     {
         seniImage: tes2,
-        seniName: 'Seni 2'
+        seniName: 'Komik Strip'
     },
     {
         seniImage: tes3,
-        seniName: 'Seni 3'
+        seniName: 'Seni Lukis'
     },
     {
         seniImage: tes4,
@@ -47,7 +47,13 @@ const seniData = [
     }
 ]
 
-const Seni = () => {
+const Seni = ({ getKompetisiTag }) => {
+
+    const [kompetisiTag, setKompetisiTag] = useState('')
+  
+    useEffect(() => {
+      getKompetisiTag(kompetisiTag)
+    }, [getKompetisiTag, kompetisiTag])
 
     let settings = {
         infinite: true,
@@ -65,7 +71,12 @@ const Seni = () => {
             <div className='spirit__kompetisi-container'>
                 <Slider {...settings}>
                     {seniData.map((item, index) => (
-                        <KometisiList kompetisiImage={item.seniImage} kompetisiName={item.seniName} />
+                        <KometisiList 
+                            kompetisiImage={item.seniImage} 
+                            kompetisiName={item.seniName} 
+                            kompetisiPropTag={setKompetisiTag}
+                            key={item.seniName}
+                        />
                     ))}
                 </Slider>
             </div>

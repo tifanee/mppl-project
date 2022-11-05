@@ -19,7 +19,7 @@ const PressRelease = () => {
           <h1>PRESS RELEASE</h1>
       </div>
       {pressReleaseData.map((item, index) => (
-        <div className='spirit__pressRelease-article'>
+        <div className='spirit__pressRelease-article' key={item.contentLink}>
           <Article text={item.text} contentImage={item.pressReleaseImage} contentLink={item.contentLink} />
         </div>
       ))}

@@ -19,7 +19,7 @@ const Klasemen = () => {
           <h1>KLASEMEN</h1>
       </div>
       {klasemenData.map((item, index) => (
-        <div className='spirit__klasemen-article'>
+        <div className='spirit__klasemen-article' key={item.contentLink}>
           <Article2 text={item.text} contentImage={item.klasemenImage} contentLink={item.contentLink} />
         </div>
       ))}

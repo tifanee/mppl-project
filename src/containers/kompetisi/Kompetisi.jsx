@@ -76,6 +76,7 @@ const Kompetisi = () => {
                 <div 
                     onClick={() => moveDot(index + 1)}
                     className={slideIndex === index + 1 ? "dot active" : "dot"}
+                    key={index + 1}
                 ></div>
             ))}
           </div>

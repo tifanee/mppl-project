@@ -1,10 +1,10 @@
 import React from 'react'
-import { Seni } from '../containers/index'
+import { JadwalSeni } from '../containers/index'
 
 const KompetisiSeni = () => {
   return (
     <div>
-      <Seni />
+      < JadwalSeni />
     </div>
   )
 }
