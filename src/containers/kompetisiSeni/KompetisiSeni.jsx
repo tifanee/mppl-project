@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import Slider from 'react-slick'
 
-import './seni.css'
+import './kompetisiSeni.css'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-import { KometisiList } from '../../components/index'
+import { List } from '../../components/index'
 import { tes1, tes2, tes3, tes4, tes5, tes6, tes7, tes8, tes9} from '../../assets/tes/imports'
 
 const seniData = [
@@ -47,13 +47,13 @@ const seniData = [
     }
 ]
 
-const Seni = ({ getKompetisiTag }) => {
+const KompetisiSeni = ({ getListTag }) => {
 
-    const [kompetisiTag, setKompetisiTag] = useState('')
+    const [listTag, setListTag] = useState('')
   
     useEffect(() => {
-      getKompetisiTag(kompetisiTag)
-    }, [getKompetisiTag, kompetisiTag])
+      getListTag(listTag)
+    }, [getListTag, listTag])
 
     let settings = {
         infinite: true,
@@ -71,10 +71,10 @@ const Seni = ({ getKompetisiTag }) => {
             <div className='spirit__kompetisi-container'>
                 <Slider {...settings}>
                     {seniData.map((item, index) => (
-                        <KometisiList 
-                            kompetisiImage={item.seniImage} 
-                            kompetisiName={item.seniName} 
-                            kompetisiPropTag={setKompetisiTag}
+                        <List 
+                            listImage={item.seniImage} 
+                            listName={item.seniName} 
+                            listPropTag={setListTag}
                             key={item.seniName}
                         />
                     ))}
@@ -84,4 +84,4 @@ const Seni = ({ getKompetisiTag }) => {
     )
 }
 
-export default Seni
+export default KompetisiSeni

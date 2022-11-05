@@ -1,8 +1,11 @@
 import React from 'react'
+import { KontingenContainer } from '../containers/index'
 
 const Kontingen = () => {
   return (
-    <div>Kontingen</div>
+    <div>
+      < KontingenContainer />
+    </div>
   )
 }
 

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import Slider from 'react-slick'
 
-import './olahraga.css'
+import './kompetisiOlahraga.css'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-import { KometisiList } from '../../components/index'
+import { List } from '../../components/index'
 import { tes1, tes2, tes3, tes4, tes5, tes6, tes7, tes8, tes9} from '../../assets/tes/imports'
 
 const olahragaData = [
@@ -47,13 +47,13 @@ const olahragaData = [
   }
 ]
 
-const Olahraga = ({ getKompetisiTag }) => {
+const KompetisiOlahraga = ({ getListTag }) => {
 
-  const [kompetisiTag, setKompetisiTag] = useState('')
+  const [listTag, setListTag] = useState('')
   
   useEffect(() => {
-    getKompetisiTag(kompetisiTag)
-  }, [getKompetisiTag, kompetisiTag])
+    getListTag(listTag)
+  }, [getListTag, listTag])
 
   let settings = {
     infinite: true,
@@ -71,10 +71,10 @@ const Olahraga = ({ getKompetisiTag }) => {
         <div className='spirit__kompetisi-container'>
           <Slider {...settings}>
             {olahragaData.map((item, index) => (
-              <KometisiList 
-                kompetisiImage={item.olahragaImage} 
-                kompetisiName={item.olahragaName} 
-                kompetisiPropTag={setKompetisiTag}
+              <List 
+                listImage={item.olahragaImage} 
+                listName={item.olahragaName} 
+                listPropTag={setListTag}
                 key={item.olahragaName}
               />
             ))}
@@ -84,4 +84,4 @@ const Olahraga = ({ getKompetisiTag }) => {
   )
 }
 
-export default Olahraga
+export default KompetisiOlahraga

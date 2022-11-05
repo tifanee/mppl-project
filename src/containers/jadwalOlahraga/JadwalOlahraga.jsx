@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './jadwalOlahraga.css'
 
-import { Olahraga } from '../index'
+import { KompetisiOlahraga } from '../index'
 import { Jadwal } from '../../components/index'
 import { g1, g2, g3, g4, g5, g6, g7, g8 } from '../../components/department/imports'
 
@@ -154,18 +154,18 @@ const jadwalData = [
 
 const JadwalOlahraga = () => {
 
-  const [kompetisiTag, setKompetisiTag] = useState({kompetisiName: ''})
+  const [listTag, setListTag] = useState({listName: ''})
 
-  const jadwalFiltered = () => (
+  const jadwalFiltered = (
     jadwalData.filter(tag => {
-      return tag.kompetisiName.includes(kompetisiTag.kompetisiName)
+      return tag.kompetisiName.includes(listTag.listName)
     })
   )
 
   return (
     <>
-        < Olahraga getKompetisiTag={setKompetisiTag} />
-        < Jadwal jadwalData={jadwalFiltered()} />
+        < KompetisiOlahraga getListTag={setListTag} />
+        < Jadwal jadwalData={jadwalFiltered} />
     </>
   )
 }
