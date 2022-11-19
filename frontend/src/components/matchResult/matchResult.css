@@ -1,0 +1,84 @@
+.spirit__match-result {
+    background: #000000;
+    border: 1px solid #FFFFFF;
+
+    margin-bottom: 4rem;
+}
+
+.spirit__match-name-date {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spirit__match-name {
+    padding: 2rem 3rem;
+
+    font-weight: 800;
+    font-size: 24px;
+
+    background: rgba(255, 70, 85, 0.5);
+}
+
+.spirit__match-date {
+    font-weight: 400;
+    font-size: 18px;
+
+    text-align: right;
+    align-items: center;
+
+    padding: 1.5rem 3rem;
+}
+
+.spirit__match-result-detail {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 40px;
+
+    padding: 3rem;
+}
+
+.spirit__dept-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 24px;
+
+    margin: 0 5rem;
+}
+
+.spirit__dept-detail img {
+    width: 180px;
+    height: 180px;
+
+    border: 3px solid #FF4655;
+    border-radius: 100px;
+
+    margin-bottom: 1rem;
+}
+
+.spirit__match-location {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: right;
+
+    font-weight: 700;
+    font-size: 20px;
+
+    padding: 2rem 3rem;
+}
+
+.spirit__match-location img {
+    margin-right: 0.5rem;
+}

@@ -1,0 +1,35 @@
+GET http://localhost:8000/matchs
+
+###
+GET http://localhost:8000/matchs/6379016e17cd935191d075a9
+
+###
+POST http://localhost:8000/matchs
+Content-Type: application/json
+
+{
+    "sport_name": "Karate",
+    "dept_name1": "G5 - Matematika",
+    "dept_name2": "G2 - Ilmu Komputer",
+    "dept_image1": "https://i.ibb.co/S3VmDzC/tes3.png",
+    "dept_image2": "https://i.ibb.co/S3VmDzC/tes3.png",
+    "location": "Gymnasium",
+    "is_finished": false,
+    "score_result": [1, 2],
+    "time": "18:00",
+    "day": "Senin",
+    "date": "26 Oktober 2022"
+
+}
+
+###
+PATCH http://localhost:8000/matchs/63787d7e4bd90f3636cc3f89
+Content-Type: application/json
+
+{
+    "athletes_list": []
+}
+
+###
+DELETE  http://localhost:8000/matchs/63786f28c1c12eec1dceccf5
+Content-Type: application/json

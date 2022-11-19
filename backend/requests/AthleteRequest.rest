@@ -1,0 +1,29 @@
+###
+GET http://localhost:8000/athletes
+
+###
+GET http://localhost:8000/athletes/6378a2aa3524b34eaf7e16b5
+
+###
+POST http://localhost:8000/athletes
+Content-Type: application/json
+
+{
+    "name": "Statistika 13",
+    "nim": "G64190006",
+    "image": "https://i.ibb.co/S3VmDzC/tes3.png",
+    "department": "Statistika",
+    "batch": "55",
+    "sport_team": "Sepak Bola"
+}
+
+###
+PATCH http://localhost:8000/athletes/6378a2aa3524b34eaf7e16b5
+Content-Type: application/json
+
+{
+    "name": "Gadis Ceria Tawa"
+}
+
+###
+DELETE http://localhost:8000/athletes/6378a2aa3524b34eaf7e16b5

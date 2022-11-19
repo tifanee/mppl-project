@@ -1,0 +1,55 @@
+.spirit__match-squad {
+    background: #000000;
+    border: 1px solid #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 4rem 6rem;
+}
+
+.spirit__match-squad > p,
+.spirit__squad-detail > p {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.spirit__squad-detail {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 2rem;
+}
+
+.spirit__squad-team > p {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.spirit__squad-team {
+    margin: 0 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.spirit__squad-dept {
+    background: rgba(255, 70, 85, 0.5);
+    border: 1px solid #FFFFFF;
+
+    font-weight: 700;
+    font-size: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-bottom: 1rem;
+
+    width: 350px;
+    height: 50px;
+}

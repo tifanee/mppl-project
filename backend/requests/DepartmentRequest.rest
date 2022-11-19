@@ -1,0 +1,29 @@
+GET http://localhost:8000/departments
+
+###
+GET http://localhost:8000/departments/6379016e17cd935191d075a9
+
+###
+POST http://localhost:8000/departments
+Content-Type: application/json
+
+{
+    "dept_name": "Statistika",
+    "dept_code": "G1",
+    "dept_image": "https://i.ibb.co/sQDzVhp/g1.png",
+    "gold_medal_count": 1,
+    "silver_medal_count": 2,
+    "bronze_medal_count": 3
+}
+
+###
+PATCH http://localhost:8000/departments/63787d7e4bd90f3636cc3f89
+Content-Type: application/json
+
+{
+    "athletes_list": []
+}
+
+###
+DELETE  http://localhost:8000/departments/63786f28c1c12eec1dceccf5
+Content-Type: application/json

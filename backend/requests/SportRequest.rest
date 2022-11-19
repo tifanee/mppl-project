@@ -1,0 +1,25 @@
+GET http://localhost:8000/sports
+
+###
+GET http://localhost:8000/sports/63786ec7c1c12eec1dceccf2
+
+###
+POST http://localhost:8000/sports
+Content-Type: application/json
+
+{
+    "sport_name": "Sepak Bola",
+    "sport_image": "https://i.ibb.co/4FDX4Nb/tes2.png"
+}
+
+###
+PATCH http://localhost:8000/sports/6378cc3ebf6bb56ed48c038b
+Content-Type: application/json
+
+{
+    "sport_image": "https://i.ibb.co/4FDX4Nb/tes2.png"
+}
+
+###
+DELETE  http://localhost:8000/sports/6378cc3ebf6bb56ed48c038b
+Content-Type: application/json
