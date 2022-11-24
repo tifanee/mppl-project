@@ -10,7 +10,11 @@
     padding: 4rem 6rem;
 }
 
-.spirit__match-squad > p,
+.spirit__match-squad > p {
+    font-weight: 700;
+    font-size: 40px;
+}
+
 .spirit__squad-detail > p {
     font-weight: 800;
     font-size: 24px;
@@ -20,7 +24,7 @@
     display: flex;
     flex-direction: row;
 
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .spirit__squad-team > p {
@@ -52,4 +56,27 @@
 
     width: 350px;
     height: 50px;
+}
+
+.spirit__squad {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+
+    padding: 0 1rem;
+    
+    width: 100%;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.spirit__squad-batch {
+    font-weight: 700;
+}
+
+.spirit__squad-name {
+    margin-left: 1rem;
 }

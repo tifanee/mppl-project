@@ -14,7 +14,7 @@ const JadwalOlahraga = () => {
   }, [])
 
   const getMatchs = async () => {
-    const response = await axios.get('http://localhost:8000/matchs')
+    const response = await axios.get('http://localhost:8000/api/matchs')
     setMatchs(response.data)
   }
 

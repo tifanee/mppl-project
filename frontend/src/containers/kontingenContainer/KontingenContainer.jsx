@@ -13,7 +13,7 @@ const KontingenContainer = () => {
     }, [])
 
     const getAthletes = async () => {
-        const response = await axios.get('http://localhost:8000/athletes')
+        const response = await axios.get('http://localhost:8000/api/athletes')
         setAthletes(response.data)
     }
 

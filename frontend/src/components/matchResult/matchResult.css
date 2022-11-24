@@ -20,6 +20,7 @@
     font-size: 24px;
 
     background: rgba(255, 70, 85, 0.5);
+    border-bottom-right-radius: 50px;
 }
 
 .spirit__match-date {

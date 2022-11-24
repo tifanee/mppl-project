@@ -13,11 +13,17 @@ const Navbar = () => {
         </Link>
       </div>
       <div className='spirit__navbar-container'>
-        <p><a href="#kompetisi">Kompetisi</a></p>
-          <p><a href="#kontingen">Kontingen</a></p>
-          <p><a href="#klasemen">Klasemen</a></p>
-          <p><a href="#pressRelease">Press Release</a></p>
-          <p><a href="#contactUs">Contact Us</a></p>
+        <p>
+          <a>Kompetisi</a>
+          <div className='spirit__navbar-dropdown'>
+            <Link to='/kompetisi-olahraga'><p><a>Olahraga</a></p></Link>
+            <Link to='/kompetisi-seni'><p><a>Seni</a></p></Link>
+          </div>
+        </p>
+        <Link to='/kontingen'><p><a>Kontingen</a></p></Link>
+        <Link to='/klasemen'><p><a>Klasemen</a></p></Link>
+        <Link to='/press-release'><p><a>Press Release</a></p></Link>
+        <Link to='/contactUs'><p><a>Contact Us</a></p></Link>
       </div>
     </div>
   )

@@ -1,0 +1,55 @@
+.spirit__PR-card {
+    padding: 2rem 2rem;
+    background: #000000;
+    border: 1px solid #FFFFFF;
+}
+
+.spirit__PR-image-article img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.spirit__PR-title-article {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.spirit__PR-credit-date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    font-weight: 200;
+    font-size: 20px;
+
+    margin-top: 0.3rem;
+}
+
+
+.spirit__PR-credit-date p {
+    color: #808080;
+}
+
+.spirit__PR-credit {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.spirit__credit-name {
+    font-weight: 600;
+    margin-left: 0.4rem;
+}
+
+.spirit__PR-text {
+    margin-top: 2rem;
+}
+
+.spirit__PR-text p {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 160%;
+}

@@ -4,6 +4,7 @@ import './jadwal.css'
 import { H2H } from '../../components/index'
 
 const Jadwal = ({ jadwalData }) => {
+
   return (
     <div className='spirit__content section__padding' id='jadwal'>
       <div className="spirit__heading">
@@ -51,8 +52,9 @@ const Jadwal = ({ jadwalData }) => {
                               departmentImage2={item.dept_image2}
                               departmentName2={item.dept_name2}
                               kompetisiName={item.sport_name}
-                              kompetisiLocation={item.location} 
-                              key={item.id}
+                              kompetisiLocation={item.location}
+                              kompetisiId={item._id}
+                              key={item._id}
                             />
                           ))}
                         </div>

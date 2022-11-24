@@ -12,3 +12,28 @@ export { default as KontingenDeparment } from './kontingenDepartment/KontingenDe
 export { default as KontingenContainer } from './kontingenContainer/KontingenContainer'
 export { default as KontingenParticipant } from './kontingenParticipant/KontingenParticipant'
 export { default as Match } from './match/Match'
+export { default as PressReleaseList} from './pressReleaseList/PressReleaseList'
+export { default as PressReleaseArticle } from './pressRelelaseArticle/PressReleaseArticle'
+
+export { default as Register } from './SpiritDataActions/Register'
+export { default as Login } from './SpiritDataActions/Login'
+
+export { default as DataDepartment } from './SpiritData/DataDepartment'
+export { default as DepartmentDataAdd } from './SpiritDataActions/DepartmentDataAdd'
+export { default as DepartmentDataEdit } from './SpiritDataActions/DepartmentDataEdit'
+
+export { default as DataSport } from './SpiritData/DataSport'
+export { default as SportDataAdd } from './SpiritDataActions/SportDataAdd'
+export { default as SportDataEdit } from './SpiritDataActions/SportDataEdit'
+
+export { default as DataAthlete } from './SpiritData/DataAthlete'
+export { default as AthleteDataAdd } from './SpiritDataActions/AthleteDataAdd'
+export { default as AthleteDataEdit } from './SpiritDataActions/AthleteDataEdit'
+
+export { default as DataSportTeam } from './SpiritData/DataSportTeam'
+export { default as SportTeamDataAdd } from './SpiritDataActions/SportTeamDataAdd'
+export { default as SportTeamDataEdit } from './SpiritDataActions/SportTeamDataEdit'
+
+export { default as DataMatch } from './SpiritData/DataMatch'
+export { default as MatchDataAdd } from './SpiritDataActions/MatchDataAdd'
+export { default as MatchDataEdit } from './SpiritDataActions/MatchDataEdit'

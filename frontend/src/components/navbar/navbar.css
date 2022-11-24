@@ -4,7 +4,7 @@
     align-items: center;
     flex: 1;
 
-    padding: 1rem 6rem;
+    padding: 0rem 6rem;
 }
 
 .spirit__navbar-logo {
@@ -12,8 +12,8 @@
 }
 
 .spirit__navbar-logo img {
-    width: 84px;
-    height: 84px;
+    width: 56px;
+    height: 56px;
 }
 
 .spirit__navbar-container {
@@ -23,13 +23,37 @@
 
 .spirit__navbar-container p {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
 
     margin: 0 2.5rem;
     cursor: pointer;
+
+    padding: 2.2rem 0;
 }
 
 .spirit__navbar-container p:hover {
     color: #FF4655;
+}
+
+.spirit__navbar-dropdown {
+    display: none;
+}
+
+.spirit__navbar-container p:hover .spirit__navbar-dropdown{
+    display: block;
+    color: #FF4655;
+    position: absolute;
+    z-index: 1;
+
+    background: #000000;
+    border-bottom: 5px solid #FF4655;
+    box-shadow: 0px 4px 5px 5px rgb(0 0 0 / 8%);
+
+    margin-top: 2.2rem;
+
+}
+
+.spirit__navbar-container p:hover .spirit__navbar-dropdown p {
+    padding: 1.2rem 0;
 }

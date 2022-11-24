@@ -13,7 +13,7 @@ const MedalTable = () => {
   }, [])
 
   const getDepartments = async () => {
-    const response = await axios.get('http://localhost:8000/departments')
+    const response = await axios.get('http://localhost:8000/api/departments')
     setDepartment(response.data)
   }
 

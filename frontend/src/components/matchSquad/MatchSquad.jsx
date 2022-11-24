@@ -1,30 +1,35 @@
 import React from 'react'
 import './matchSquad.css'
 
-const MatchSquad = () => {
+const MatchSquad = ({data}) => {
   return (
     <div className='spirit__match-squad'>
         <p>SUSUNAN PEMAIN</p>
         <div className='spirit__squad-detail'>
             <div className='spirit__squad-team'>
                 <div className='spirit__squad-dept'>
-                    <p>G1 STATISTIKA</p>
+                    <p>{data.dept_name1}</p>
                 </div>
-                <p>20 Bambang Sudrajat</p>
-                <p>20 Bambang Sudrajat</p>
-                <p>20 Bambang Sudrajat</p>
-                <p>20 Bambang Sudrajat</p>
-                <p>20 Bambang Sudrajat</p>
-                <p>20 Bambang Sudrajat</p>
+                {data.athletes_team1?.map((athlete) => (
+                    <div className='spirit__squad' key={athlete._id}>
+                        <p className='spirit__squad-batch'>{athlete.batch}</p>
+                        <p className='spirit__squad-name'>{athlete.name}</p>
+                    </div>
+                ))}
             </div>
 
             <p>VS</p>
 
             <div className='spirit__squad-team'>
                 <div className='spirit__squad-dept'>
-                    <p>G2 GFM</p>
+                    <p>{data.dept_name2}</p>
                 </div>
-                <p>20 Bambang Sudrajat</p>
+                {data.athletes_team2?.map((athlete) => (
+                    <div className='spirit__squad' key={athlete._id}>
+                        <p className='spirit__squad-batch'>{athlete.batch}</p>
+                        <p className='spirit__squad-name'>{athlete.name}</p>
+                    </div>
+                ))}
             </div>
         </div>
     </div>

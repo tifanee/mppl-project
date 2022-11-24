@@ -1,6 +1,5 @@
 import React from 'react'
 import './participant.css'
-import { tes1 } from '../../assets/tes/imports'
 
 const Participant = ({ participantImage, participantName, participantDepartment, participantKompetisi }) => {
   return (
