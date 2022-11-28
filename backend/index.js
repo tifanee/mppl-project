@@ -7,8 +7,11 @@ import colors from 'colors'
 import path, {dirname} from 'path'
 import { fileURLToPath  } from 'url'
 
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+
 import connectDB from './config/Database.js'
-dotenv.config()
+dotenv.config({path: __dirname + '/.env'})
 
 import DepartmentRoute from './routes/DepartmentRoute.js'
 import AthleteRoute from './routes/AthletesRoute.js'
@@ -37,9 +40,6 @@ app.use('/api', MatchRoute)
 app.use('/api', ContestRoute)
 app.use('/api', ArticleRoute)
 app.use('/api', Admin)
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
 
 if(process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../frontend/build')))
