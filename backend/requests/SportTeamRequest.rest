@@ -1,19 +1,19 @@
-GET http://localhost:8000/sport-teams
+GET http://localhost:8000/api/sport-teams
 
 ###
-GET http://localhost:8000/sport-teams/63786ec7c1c12eec1dceccf2
+GET http://localhost:8000/api/sport-teams/63786ec7c1c12eec1dceccf2
 
 ###
-POST http://localhost:8000/sport-teams
+POST http://localhost:8000/api/sport-teams
 Content-Type: application/json
 
 {
-    "department": "Biologi",
-    "sport_type": "Futsal"
+    "department": "d4",
+    "sport_type": "s4"
 }
 
 ###
-PATCH http://localhost:8000/sport-teams/6378fc9b17cd935191d07588
+PATCH http://localhost:8000/api/sport-teams/6378fc9b17cd935191d07588
 Content-Type: application/json
 
 {
@@ -22,5 +22,5 @@ Content-Type: application/json
 }
 
 ###
-DELETE  http://localhost:8000/sport-teams/6378cdf27054e16c579b5f9a
+DELETE  http://localhost:8000/api/sport-teams/6378cdf27054e16c579b5f9a
 Content-Type: application/json

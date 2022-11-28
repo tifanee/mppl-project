@@ -1,0 +1,25 @@
+GET http://localhost:8000/api/arts
+
+###
+GET http://localhost:8000/api/arts/638247aad5d080a246f0acd1
+
+###
+POST http://localhost:8000/api/arts
+Content-Type: application/json
+
+{
+    "art_name": "s6",
+    "art_image": "https://i.ibb.co/4FDX4Nb/tes2.png"
+}
+
+###
+PATCH http://localhost:8000/api/arts/638247aad5d080a246f0acd1
+Content-Type: application/json
+
+{
+    "art_name": "s7"
+}
+
+###
+DELETE  http://localhost:8000/api/arts/638247b0d5d080a246f0acd3
+Content-Type: application/json

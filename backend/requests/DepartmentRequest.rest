@@ -1,15 +1,15 @@
-GET http://localhost:8000/departments
+GET http://localhost:8000/api/departments
 
 ###
-GET http://localhost:8000/departments/6379016e17cd935191d075a9
+GET http://localhost:8000/api/departments/6379016e17cd935191d075a9
 
 ###
-POST http://localhost:8000/departments
+POST http://localhost:8000/api/departments
 Content-Type: application/json
 
 {
-    "dept_name": "Statistika",
-    "dept_code": "G1",
+    "dept_name": "d4",
+    "dept_code": "d4",
     "dept_image": "https://i.ibb.co/sQDzVhp/g1.png",
     "gold_medal_count": 1,
     "silver_medal_count": 2,
@@ -17,7 +17,7 @@ Content-Type: application/json
 }
 
 ###
-PATCH http://localhost:8000/departments/63787d7e4bd90f3636cc3f89
+PATCH http://localhost:8000/api/departments/63787d7e4bd90f3636cc3f89
 Content-Type: application/json
 
 {
@@ -25,5 +25,5 @@ Content-Type: application/json
 }
 
 ###
-DELETE  http://localhost:8000/departments/63786f28c1c12eec1dceccf5
+DELETE  http://localhost:8000/api/departments/63786f28c1c12eec1dceccf5
 Content-Type: application/json

@@ -1,0 +1,29 @@
+###
+GET http://localhost:8000/api/artists
+
+###
+GET http://localhost:8000/api/artists/638110ad3a7279c64831b77f
+
+###
+POST http://localhost:8000/api/artists
+Content-Type: application/json
+
+{
+    "name": "seni 3",
+    "nim": "seni",
+    "image": "https://i.ibb.co/27NmvV1/spirit-participant.png",
+    "department": "seni",
+    "batch": "seni",
+    "artist_in": "seni 3"
+}
+
+###
+PATCH http://localhost:8000/api/artists/638110ad3a7279c64831b77f
+Content-Type: application/json
+
+{
+    "name": "d1s11 t5"
+}
+
+###
+DELETE http://localhost:8000/api/artists/638110ad3a7279c64831b77f

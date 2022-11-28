@@ -25,12 +25,6 @@ const TableDepartment = ({data}) => {
         <div className='content__center'>
             <p>{data.bronze_medal_count}</p>
         </div>
-        <div className='content__center'>
-            <p>tes</p>
-        </div>
-        <div className='content__center'>
-            <p>tes</p>
-        </div>
     </div>
   )
 }

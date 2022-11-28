@@ -24,7 +24,7 @@ const PressReleaseList = () => {
       </div>
       <div className='spirit__press-release-list'>
         {articles.map((data) => (
-          <PressReleaseCard data={data} />
+          <PressReleaseCard data={data} key={data._id}/>
         ))}
       </div>
     </div>

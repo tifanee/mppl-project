@@ -10,8 +10,7 @@ const Department = mongoose.Schema({
         required: true
     },
     dept_image: {
-        type: String, 
-        required: true
+        type: String
     },
     gold_medal_count: {
         type: Number, 

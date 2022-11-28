@@ -1,13 +1,14 @@
 import Department from '../models/DepartmentModel.js'
+import asyncHandler from 'express-async-handler'
 
-export const getDepartments = async (req, res) => {
+export const getDepartments = asyncHandler (async (req, res) => {
     try {
         const departments = await Department.find()
         res.json(departments)
     } catch (error) {
         res.status(500).json({message: error.message})
     }
-}
+})
 
 export const getDepartmentById = async (req, res) => {
     try {

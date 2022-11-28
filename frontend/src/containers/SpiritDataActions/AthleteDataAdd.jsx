@@ -68,7 +68,7 @@ const AthleteDataAdd = () => {
                         type="text" 
                         className='input'
                         value={image}
-                        onChange={(e) => set_image(e.target.value)}
+                        onChange={(e) => e.target.value === ' ' ? set_image('https://i.ibb.co/27NmvV1/spirit-participant.png') : set_image(e.target.value)}
                         placeholder='Gambar'
                     />
                 </div>

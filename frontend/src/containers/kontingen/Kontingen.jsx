@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 
 import './kontingen.css'
 import { Department } from '../../components'
@@ -48,14 +49,26 @@ const departmentData = [
 ]
 
 const Kontingen = () => {
+
+  const [departments, setDepartments] = useState([])
+
+  useEffect(() => {
+      getDepartments()
+  }, [])
+
+  const getDepartments = async () => {
+    const response = await axios.get('http://localhost:8000/api/departments')
+    setDepartments(response.data)
+  }
+
   return (
     <div className='spirit__content section__padding' id='kontingen'>
       <div className='spirit__heading'>
         <h1>KONTINGEN</h1>
       </div>
       <div className='spirit__kontingen-container'>
-        {departmentData.map((item, index) => (
-          <Department departmentImage={item.departmentImage} departmentKey={item.departmentKey} departmentName={item.departmentName} key={item.departmentImage + index} />
+        {departments.map((item, index) => (
+          <Department departmentImage={item.dept_image} departmentKey={item.dept_code} departmentName={item.dept_name} key={item._id} />
         ))}
       </div>
     </div>

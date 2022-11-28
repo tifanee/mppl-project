@@ -14,12 +14,10 @@ const Match = mongoose.Schema({
         required: true
     },
     dept_image1: {
-        type: String,
-        required: true
+        type: String
     },
     dept_image2: {
-        type: String,
-        required: true
+        type: String
     },
     location: {
         type: String,
@@ -39,13 +37,18 @@ const Match = mongoose.Schema({
     },
     is_finished: {
         type: Boolean,
-        required: true
+        default: false
     },
     score_result: {
         type: Array,
-        required: true
+        default: [0,0]
     },
-
+    athletes_team1: {
+        type: Array
+    },
+    athletes_team2: {
+        type: Array
+    },
 })
 
 export default mongoose.model('Matchs', Match)

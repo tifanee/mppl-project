@@ -26,7 +26,7 @@ const Register = () => {
                 password
             })
             console.log({status: 'ok'})
-            navigate('/admin')
+            navigate('/admin/login')
         } catch (error) {
             console.log({message: error.message, error:'Duplicate Email'})
         }
@@ -90,13 +90,15 @@ const Register = () => {
                 <label className='label'>Email</label>
                 <div className='control'>
                     <input 
-                        type="text" 
+                        type="email" 
                         className='input'
                         value={email}
+                        pattern='.+@apps\.ipb\.ac\.id'
                         onChange={(e) => set_email(e.target.value)}
                         placeholder='Email'
                     />
                 </div>
+                <p>email@apps.ipb.ac.id</p>
             </div>
             <div className='field'>
                 <label className='label'>Password</label>
@@ -107,8 +109,10 @@ const Register = () => {
                         value={password}
                         onChange={(e) => set_password(e.target.value)}
                         placeholder='Password'
+                        minLength="6"
                     />
                 </div>
+                <p>Password harus 6 karakter atau lebih</p>
             </div>
             <div className='field'>
                 <div className='control'>

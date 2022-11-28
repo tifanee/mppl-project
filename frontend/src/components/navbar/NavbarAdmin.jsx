@@ -5,35 +5,47 @@ import logo from '../../assets/logo.png'
 import './navbar.css'
 
 const NavbarAdmin = () => {
-    const navigate =useNavigate()
-    const logout = () => {
-        localStorage.clear()
-        navigate('/admin/login')
-    }
+  const authenticated = JSON.parse(localStorage.getItem('isAuthenticated'))
+
+  const navigate =useNavigate()
+
+  const logout = () => {
+      localStorage.clear()
+      navigate('/admin/login')
+  }
 
   return (
     <div className='spirit__navbar'>
       <div className='spirit__navbar-logo'>
-        <Link to='/admin'>
-          <img src={logo} alt="logo" />
-        </Link>
+        <img src={logo} alt="logo" />
       </div>
       <div className='spirit__navbar-container'>
-        <p>
-            <a>Kontingen</a>
-            <div className='spirit__navbar-dropdown'>
-                <Link to='/admin/department'><p><a>Departemen</a></p></Link>
-                <Link to='/admin/sport-team'><p><a>Tim Olahraga</a></p></Link>
-                <Link to='/admin/athlete'><p><a>Atlet</a></p></Link>
-            </div>
-        </p>
-        
-        
-        
-        <Link to='/admin/sport'><p><a>Olahraga</a></p></Link>
-        <Link to='/admin/match'><p><a>Pertandingan</a></p></Link>
-        <Link to='/admin/press-release'><p><a>Artikel</a></p></Link>
-        <p onClick={logout}><a>Logout</a></p>
+        <div className='spirit__dropdown'>
+          <p>Kontingen</p>
+          <div className='spirit__navbar-dropdown'>
+            <Link to='/admin/department'><p>Departemen</p></Link>
+            <Link to='/admin/sport-team'><p>Tim Olahraga</p></Link>
+            <Link to='/admin/athlete'><p>Atlet</p></Link>
+            <Link to='/admin/artist'><p>Artis</p></Link>
+          </div>
+        </div>
+        <div className='spirit__dropdown'>
+          <p>Kompetisi</p>
+          <div className='spirit__navbar-dropdown'>
+            <Link to='/admin/sport'><p>Olahraga</p></Link>
+            <Link to='/admin/art'><p>Seni</p></Link>
+          </div>
+        </div>
+        <div className='spirit__dropdown'>
+        <p>Jadwal</p>
+          <div className='spirit__navbar-dropdown'>
+          <Link to='/admin/match'><p>Olahraga</p></Link>
+            <Link to='/admin/contest'><p>Seni</p></Link>
+          </div>
+        </div>
+        <Link to='/admin/article'><p>Artikel</p></Link>
+        {authenticated.is_superAdmin && <Link to='/admin/admin'><p>Admin</p></Link>}
+        <p onClick={logout}>Logout</p>
       </div>
     </div>
   )

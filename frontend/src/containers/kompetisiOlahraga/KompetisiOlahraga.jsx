@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 import Slider from 'react-slick'
 
 import './kompetisiOlahraga.css'
@@ -6,7 +7,6 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 import { List } from '../../components/index'
-import { Sport } from '../../data/Sport'
 
 const KompetisiOlahraga = ({ getListTag }) => {
 
@@ -15,6 +15,17 @@ const KompetisiOlahraga = ({ getListTag }) => {
   useEffect(() => {
     getListTag(listTag)
   }, [getListTag, listTag])
+
+  const [sports, setSports] = useState([])
+
+  useEffect(() => {
+    getSports()
+  }, [])
+
+  const getSports = async () => {
+    const response = await axios.get('http://localhost:8000/api/sports')
+    setSports(response.data)
+  }
 
   let settings = {
     infinite: true,
@@ -31,12 +42,12 @@ const KompetisiOlahraga = ({ getListTag }) => {
         </div>
         <div className='spirit__kompetisi-container'>
           <Slider {...settings}>
-            {Sport.map((item, index) => (
+            {sports.map((item, index) => (
               <List 
                 listImage={item.sport_image} 
                 listName={item.sport_name} 
                 listPropTag={setListTag}
-                key={item.id}
+                key={item._id}
               />
             ))}
           </Slider>

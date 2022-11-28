@@ -12,8 +12,6 @@ const MatchDataAdd = () => {
     const [date, set_date] = useState('')
     const [day, set_day] = useState('')
     const [time, set_time] = useState('')
-    // const [is_finished, set_is_finished] = useState('')
-    // const [score_result, set_score_result] = useState([])
 
     const navigate = useNavigate()
 
@@ -27,9 +25,7 @@ const MatchDataAdd = () => {
                 location,
                 date,
                 day,
-                time,
-                // is_finished,
-                // score_result
+                time
             })
             navigate('/admin/match')
         } catch (error) {
@@ -127,30 +123,6 @@ const MatchDataAdd = () => {
                     />
                 </div>
             </div>
-            {/* <div className='field'>
-                <label className='label'>Apakah Sudah Selesai?</label>
-                <div className='control'>
-                    <input 
-                        type="text" 
-                        className='input'
-                        value={is_finished}
-                        onChange={(e) => set_is_finished(e.target.value)}
-                        placeholder='Apakah Sudah Selesai?'
-                    />
-                </div>
-            </div>
-            <div className='field'>
-                <label className='label'>Hasil</label>
-                <div className='control'>
-                    <input 
-                        type="text" 
-                        className='input'
-                        value={score_result}
-                        onChange={(e) => set_score_result(e.target.value)}
-                        placeholder='Hasil'
-                    />
-                </div>
-            </div> */}
             <div className='field'>
                 <div className='control'>
                     <button type='submit' className='spirit__add-button'>

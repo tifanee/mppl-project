@@ -3,7 +3,7 @@ import axios from 'axios'
 import './jadwalOlahraga.css'
 
 import { KompetisiOlahraga } from '../index'
-import { Jadwal } from '../../components/index'
+import { OlahragaJadwal } from '../../components/index'
 
 const JadwalOlahraga = () => {
 
@@ -22,14 +22,14 @@ const JadwalOlahraga = () => {
 
   const jadwalFiltered = (
     matchs.filter(tag => {
-      return tag.sport_name.includes(listTag.listName)
+      return tag.sport_name.toLowerCase().includes(listTag.listName?.toLowerCase())
     })
   )
 
   return (
     <>
         < KompetisiOlahraga getListTag={setListTag} />
-        < Jadwal jadwalData={jadwalFiltered} />
+        < OlahragaJadwal jadwalData={jadwalFiltered} />
     </>
   )
 }

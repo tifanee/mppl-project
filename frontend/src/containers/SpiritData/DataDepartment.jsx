@@ -59,12 +59,6 @@ const DataDepartment = () => {
             <div className="content__head-center">
               <p>bronze_medal_count</p>
             </div>
-            <div className="content__head-center">
-              <p>tes</p>
-            </div>
-            <div className="content__head-center">
-              <p>tes</p>
-            </div>
           </div>
           {departments.map((data) => (
             <TableDepartment data={data} key={data._id} />

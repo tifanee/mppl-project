@@ -22,11 +22,11 @@ const AthleteDataEdit = () => {
     const getById = async () => {
         const response = await axios.get(`http://localhost:8000/api/athletes/${id}`)
         set_name(response.data.name)
-        set_nim(response.nim)
+        set_nim(response.data.nim)
         set_image(response.data.image)
-        set_department(response.department)
-        set_batch(response.batch)
-        set_sport_team(response.sport_team)
+        set_department(response.data.department)
+        set_batch(response.data.batch)
+        set_sport_team(response.data.sport_team)
     }
 
     const onSubmit = async (e) => {
@@ -53,14 +53,14 @@ const AthleteDataEdit = () => {
         </div>
         <form onSubmit={onSubmit} className='spirit-form'>
             <div className='field'>
-                <label className='label'>Nama Olahraga</label>
+                <label className='label'>Nama Lengkap</label>
                 <div className='control'>
                     <input 
                         type="text" 
                         className='input'
                         value={name}
                         onChange={(e) => set_name(e.target.value)}
-                        placeholder='Nama Olahraga'
+                        placeholder='Nama Lengkap'
                     />
                 </div>
             </div>
@@ -77,14 +77,14 @@ const AthleteDataEdit = () => {
                 </div>
             </div>
             <div className='field'>
-                <label className='label'>Gambar Olahraga</label>
+                <label className='label'>Gambar Atlet</label>
                 <div className='control'>
                     <input 
                         type="text" 
                         className='input'
                         value={image}
-                        onChange={(e) => set_image(e.target.value)}
-                        placeholder='Gambar Olahraga'
+                        onChange={(e) => e.target.value === ' ' ? set_image('https://i.ibb.co/27NmvV1/spirit-participant.png') : set_image(e.target.value)}
+                        placeholder='Gambar Atlet'
                     />
                 </div>
             </div>

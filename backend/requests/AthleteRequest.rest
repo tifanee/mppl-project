@@ -1,29 +1,34 @@
 ###
-GET http://localhost:8000/athletes
+GET http://localhost:8000/api/athletes
 
 ###
-GET http://localhost:8000/athletes/6378a2aa3524b34eaf7e16b5
+GET http://localhost:8000/api/athletes/637a795667557119de4441b4
 
 ###
-POST http://localhost:8000/athletes
+POST http://localhost:8000/api/athletes
 Content-Type: application/json
 
 {
-    "name": "Statistika 13",
-    "nim": "G64190006",
+    "name": "a7",
+    "nim": "a7",
     "image": "https://i.ibb.co/S3VmDzC/tes3.png",
-    "department": "Statistika",
+    "department": "d1",
     "batch": "55",
-    "sport_team": "Sepak Bola"
+    "sport_team": "s1"
 }
 
 ###
-PATCH http://localhost:8000/athletes/6378a2aa3524b34eaf7e16b5
+PATCH http://localhost:8000/api/athletes/638291099aadaf0633bc1495
 Content-Type: application/json
 
 {
-    "name": "Gadis Ceria Tawa"
+    "name": "test10",
+    "nim": "test10",
+    "image": "https://i.ibb.co/S3VmDzC/tes3.png test10",
+    "department": "d1",
+    "batch": "test10",
+    "sport_team": "test10"
 }
 
 ###
-DELETE http://localhost:8000/athletes/6378a2aa3524b34eaf7e16b5
+DELETE http://localhost:8000/api/athletes/63829cd9fce9192a748a2024

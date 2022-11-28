@@ -8,8 +8,6 @@ const MatchDataEdit = () => {
     const [sport_name, set_sport_name] = useState('')
     const [dept_name1, set_dept_name1] = useState('')
     const [dept_name2, set_dept_name2] = useState('')
-    // const [dept_image1, set_dept_image1] = useState('')
-    // const [dept_image2, set_dept_image2] = useState('')
     const [location, set_location] = useState('')
     const [date, set_date] = useState('')
     const [day, set_day] = useState('')
@@ -29,8 +27,6 @@ const MatchDataEdit = () => {
       set_sport_name(response.data.sport_name)
       set_dept_name1(response.data.dept_name1)
       set_dept_name2(response.data.dept_name2)
-    //   set_dept_image1(response.data.dept_image1)
-    //   set_dept_image2(response.data.dept_image2)
       set_location(response.data.location)
       set_date(response.data.date)
       set_day(response.data.day)
@@ -46,8 +42,6 @@ const MatchDataEdit = () => {
             sport_name,
             dept_name1,
             dept_name2,
-            // dept_image1,
-            // dept_image2,
             location,
             date,
             day,
@@ -103,30 +97,6 @@ const MatchDataEdit = () => {
                     />
                 </div>
             </div>
-            {/* <div className='field'>
-                <label className='label'>Gambar Departemen 1</label>
-                <div className='control'>
-                    <input 
-                        type="text" 
-                        className='input'
-                        value={dept_image1}
-                        onChange={(e) => set_dept_image1(e.target.value)}
-                        placeholder='Gambar Departemen 1'
-                    />
-                </div>
-            </div>
-            <div className='field'>
-                <label className='label'>Gambar Departemen 2</label>
-                <div className='control'>
-                    <input 
-                        type="text" 
-                        className='input'
-                        value={dept_image2}
-                        onChange={(e) => set_dept_image2(e.target.value)}
-                        placeholder='Gambar Departemen 2'
-                    />
-                </div>
-            </div> */}
             <div className='field'>
                 <label className='label'>Lokasi</label>
                 <div className='control'>
@@ -175,18 +145,6 @@ const MatchDataEdit = () => {
                     />
                 </div>
             </div>
-            {/* <div className='field'>
-                <label className='label'>Apakah Sudah Selesai?</label>
-                <div className='control'>
-                    <input 
-                        type="text" 
-                        className='input'
-                        value={is_finished}
-                        onChange={(e) => set_is_finished(e.target.value)}
-                        placeholder='Apakah Sudah Selesai?'
-                    />
-                </div>
-            </div> */}
             <div className='field'>
                 <label className='label'>Apakah Sudah Selesai?</label>
                 <div className='control'>
@@ -204,14 +162,13 @@ const MatchDataEdit = () => {
                 <label className='label'>Hasil</label>
                 <div className='control-container'>
                     {score_result?.map((result, index) => (
-                        <div className='control'>
+                        <div className='control' key={index}>
                             <input 
                                 type="text" 
                                 className='input'
                                 value={result}
                                 onChange={(e) => {const updResult = [...score_result]; updResult[index] = e.target.value; set_score_result(updResult)}}
                                 placeholder='Hasil'
-                                key={index}
                             />
                         </div>
                     ))}

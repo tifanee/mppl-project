@@ -4,11 +4,6 @@ import './matchResult.css'
 import location from '../../assets/location.png'
 
 const MatchResult = ({data}) => {
-
-    
-    // Array.from({ length: 1}).map((item, index) => (
-    //     console.log(data.score_result?.[index][0], data.score_result?.[index][1])
-    // ))
     
   return (
     <div className='spirit__match-result'>

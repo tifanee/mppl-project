@@ -24,6 +24,13 @@
     margin: 0.7rem 0;
 }
 
+.field p {
+    font-weight: 200;
+    font-size: 18px;
+    margin-top: 0.4rem;
+    color: #c1c1c1;
+}
+
 .control-container {
     /* background: blue; */
     display: flex;
@@ -36,7 +43,8 @@
 }
 
 .control input,
-.control select {
+.control select,
+.control textarea {
     flex: 1;
     width: 100%;
     min-height: 50px;
@@ -52,6 +60,10 @@
 
 
     border-radius: 10px;
+}
+
+.control textarea {
+    padding-top: 0.75rem;
 }
 
 .spirit__add-button {
@@ -73,10 +85,11 @@
 }
 
 .error_msg {
-	width: 370px;
-	padding: 15px;
+	/* width: 370px; */
+    width: 100%;
+	padding: 0.5rem;
 	margin: 5px 0;
-	font-size: 14px;
+	font-size: 16px;
 	background-color: #f34646;
 	color: white;
 	border-radius: 5px;

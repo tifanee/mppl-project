@@ -47,9 +47,6 @@ const DataSport = () => {
             <div className="content__head-flex-start">
               <p>sport_image</p>
             </div>
-            <div className="content__head-center">
-              <p>tes</p>
-            </div>
           </div>
           {data.map((params) => (
             <TableSport data={params} key={params._id} />

@@ -48,7 +48,7 @@ const SportDataAdd = () => {
                         type="text" 
                         className='input'
                         value={sport_image}
-                        onChange={(e) => set_sport_image(e.target.value)}
+                        onChange={(e) => e.target.value === ' ' ? set_sport_image('https://i.ibb.co/YLp0RrW/spirit-sport.png') : set_sport_image(e.target.value)}
                         placeholder='Gambar Olahraga'
                     />
                 </div>

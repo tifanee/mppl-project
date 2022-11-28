@@ -13,9 +13,6 @@ const TableSportTeam = ({data}) => {
         <div className='content__center'>
             <p>{data.sport_type}</p>
         </div>
-        <div className='content__center'>
-            <p>tes</p>
-        </div>
     </div>
   )
 }

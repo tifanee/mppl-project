@@ -1,9 +1,8 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
 import './spiritDataActions.css'
-import logoLarge from '../../assets/logo-large.png'
 
 const Login = () => {
 
@@ -23,9 +22,9 @@ const Login = () => {
         try {
             const url = 'http://localhost:8000/api/login'
             const { data: res } = await axios.post(url, data)
-            localStorage.setItem('isAuthenticated', true)
-            navigate('/admin/home')
-            console.log(res.message)
+            localStorage.setItem('isAuthenticated', JSON.stringify(res.message))
+            navigate('/admin/department')
+            window.location.reload(false)
         } catch (error) {
             if (
 				error.response &&

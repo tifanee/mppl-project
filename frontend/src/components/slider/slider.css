@@ -1,6 +1,5 @@
 .slider-container {
     height: 500px;
-    width: 1500px;
     position: relative;
     overflow-y: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);

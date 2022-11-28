@@ -40,7 +40,7 @@
     display: none;
 }
 
-.spirit__navbar-container p:hover .spirit__navbar-dropdown{
+.spirit__dropdown:hover .spirit__navbar-dropdown{
     display: block;
     color: #FF4655;
     position: absolute;
@@ -49,11 +49,14 @@
     background: #000000;
     border-bottom: 5px solid #FF4655;
     box-shadow: 0px 4px 5px 5px rgb(0 0 0 / 8%);
-
-    margin-top: 2.2rem;
-
 }
 
-.spirit__navbar-container p:hover .spirit__navbar-dropdown p {
-    padding: 1.2rem 0;
+.spirit__navbar-dropdown p {
+    padding: 0.8rem;
+    margin: 0 1rem;
 }
+
+.spirit__navbar-dropdown {
+    margin-left: 2.2rem;
+}
+

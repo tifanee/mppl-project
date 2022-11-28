@@ -10,11 +10,8 @@ const TableSport = ({data}) => {
         <div className='content__center'>
             <p>{data.sport_name}</p>
         </div>
-        <div className='content__center'>
+        <div className='content__flex-start'>
             <p>{data.sport_image}</p>
-        </div>
-        <div className='content__center'>
-            <p>tes</p>
         </div>
     </div>
   )

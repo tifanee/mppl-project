@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 
 import Slider from 'react-slick'
 
@@ -7,50 +8,6 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 import { List } from '../../components/index'
-import { tes1, tes2, tes3, tes4, tes5, tes6, tes7, tes8} from '../../assets/tes/imports'
-
-const departmentData = [
-    {
-      departmentImage: tes1,
-      departmentKey: 'G1',
-      departmentName: 'Statistika'
-    },
-    {
-      departmentImage: tes2,
-      departmentKey: 'G2',
-      departmentName: 'GFM'
-    },
-    {
-      departmentImage: tes3,
-      departmentKey: 'G3',
-      departmentName: 'Biologi'
-    },
-    {
-      departmentImage: tes4,
-      departmentKey: 'G4',
-      departmentName: 'Kimia'
-    },
-    {
-      departmentImage: tes5,
-      departmentKey: 'G5',
-      departmentName: 'Matematika'
-    },
-    {
-      departmentImage: tes6,
-      departmentKey: 'G6',
-      departmentName: 'Ilmu Komputer'
-    },
-    {
-      departmentImage: tes7,
-      departmentKey: 'G7',
-      departmentName: 'Fisika'
-    },
-    {
-      departmentImage: tes8,
-      departmentKey: 'G8',
-      departmentName: 'Biokimia'
-    },
-]
 
 const KontingenDepartment = ({ getListTag }) => {
     const [listTag, setListTag] = useState('')
@@ -58,6 +15,17 @@ const KontingenDepartment = ({ getListTag }) => {
     useEffect(() => {
       getListTag(listTag)
     }, [getListTag, listTag])
+
+    const [departments, setDepartments] = useState([])
+
+    useEffect(() => {
+        getDepartments()
+    }, [])
+
+    const getDepartments = async () => {
+      const response = await axios.get('http://localhost:8000/api/departments')
+      setDepartments(response.data)
+    }
   
     let settings = {
       infinite: true,
@@ -74,12 +42,12 @@ const KontingenDepartment = ({ getListTag }) => {
           </div>
           <div className='spirit__kompetisi-container'>
             <Slider {...settings}>
-              {departmentData.map((item, index) => (
+              {departments.map((item, index) => (
                 <List 
-                  listImage={item.departmentImage} 
-                  listName={item.departmentName} 
+                  listImage={item.dept_image} 
+                  listName={item.dept_name} 
                   listPropTag={setListTag}
-                  key={item.departmentKey}
+                  key={item.dept_code}
                 />
               ))}
             </Slider>

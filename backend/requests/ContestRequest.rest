@@ -1,0 +1,34 @@
+GET http://localhost:8000/api/contests
+
+###
+GET http://localhost:8000/api/contests/6380e67d99ecb82745565aaa
+
+###
+POST http://localhost:8000/api/contests
+Content-Type: application/json
+
+{
+    "art_name": "KREASI TARI DAERAH",
+    "art_type": "Performed Art",
+    "location": "Auditorium FMIPA",
+    "date": "24 Oktober 2022",
+    "day": "Senin",
+    "time": "19:30"
+}
+
+###
+PATCH http://localhost:8000/api/contests/6380e67d99ecb82745565aaa
+Content-Type: application/json
+
+{
+    "art_name": "poster",
+    "art_type": "Performed Art",
+    "location": "Auditorium FMIPA",
+    "date": "26 Oktober 2022",
+    "day": "Rabu",
+    "time": "16:00"
+}
+
+###
+DELETE  http://localhost:8000/api/contests/6380e65fd635056452085f69
+Content-Type: application/json

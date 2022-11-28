@@ -6,23 +6,27 @@ import { KontingenDeparment, KontingenParticipant } from '../index'
 
 const KontingenContainer = () => {
 
-    const [athletes, setAthletes] = useState([])
+    const [participants, setParticipants] = useState([])
 
     useEffect(() => {
-        getAthletes()
+        getParticipants()
     }, [])
 
-    const getAthletes = async () => {
-        const response = await axios.get('http://localhost:8000/api/athletes')
-        setAthletes(response.data)
+    const getParticipants = async () => {
+        const athletes_response = await axios.get('http://localhost:8000/api/athletes')
+        setParticipants(athletes_response.data)
+
+        const artists_response = await axios.get('http://localhost:8000/api/artists')
+        setParticipants(curr => [...curr, ...artists_response.data])
     }
 
     const [listTag, setListTag] = useState({listName: ''})
 
     const kontingenFiltered = (
-        athletes.filter(tag => {
-        return tag.department.includes(listTag.listName)
+        participants.filter(tag => {
+        return tag.department.toLowerCase().includes(listTag.listName?.toLowerCase())
         })
+        .sort((a,b) => a.name.localeCompare(b.name))
     )
 
     return (

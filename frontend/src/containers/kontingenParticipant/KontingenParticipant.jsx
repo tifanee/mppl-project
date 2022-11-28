@@ -12,11 +12,8 @@ const KontingenParticipant = ( {participantData} ) => {
       <div className='spirit__kontingen-participant_container'>
         {participantData.map((item, index) => (
           < Participant 
-            participantImage={item.image} 
-            participantName={item.name}
-            participantDepartment={item.department}
-            participantKompetisi={item.sport_team}
-            key={item.id}
+            participant={item}
+            key={item._id}
           />
         ))}
       </div>

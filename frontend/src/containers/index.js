@@ -22,13 +22,25 @@ export { default as DataDepartment } from './SpiritData/DataDepartment'
 export { default as DepartmentDataAdd } from './SpiritDataActions/DepartmentDataAdd'
 export { default as DepartmentDataEdit } from './SpiritDataActions/DepartmentDataEdit'
 
+export { default as DataAdmin } from './SpiritData/DataAdmin'
+export { default as AdminDataAdd } from './SpiritDataActions/AdminDataAdd'
+export { default as AdminDataEdit } from './SpiritDataActions/AdminDataEdit'
+
 export { default as DataSport } from './SpiritData/DataSport'
 export { default as SportDataAdd } from './SpiritDataActions/SportDataAdd'
 export { default as SportDataEdit } from './SpiritDataActions/SportDataEdit'
 
+export { default as DataArt } from './SpiritData/DataArt'
+export { default as ArtDataAdd } from './SpiritDataActions/ArtDataAdd'
+export { default as ArtDataEdit } from './SpiritDataActions/ArtDataEdit'
+
 export { default as DataAthlete } from './SpiritData/DataAthlete'
 export { default as AthleteDataAdd } from './SpiritDataActions/AthleteDataAdd'
 export { default as AthleteDataEdit } from './SpiritDataActions/AthleteDataEdit'
+
+export { default as DataArtist } from './SpiritData/DataArtist'
+export { default as ArtistDataAdd } from './SpiritDataActions/ArtistDataAdd'
+export { default as ArtistDataEdit } from './SpiritDataActions/ArtistDataEdit'
 
 export { default as DataSportTeam } from './SpiritData/DataSportTeam'
 export { default as SportTeamDataAdd } from './SpiritDataActions/SportTeamDataAdd'
@@ -37,3 +49,11 @@ export { default as SportTeamDataEdit } from './SpiritDataActions/SportTeamDataE
 export { default as DataMatch } from './SpiritData/DataMatch'
 export { default as MatchDataAdd } from './SpiritDataActions/MatchDataAdd'
 export { default as MatchDataEdit } from './SpiritDataActions/MatchDataEdit'
+
+export { default as DataContest } from './SpiritData/DataContest'
+export { default as ContestDataAdd } from './SpiritDataActions/ContestDataAdd'
+export { default as ContestDataEdit } from './SpiritDataActions/ContestDataEdit'
+
+export { default as DataArticle } from './SpiritData/DataArticle'
+export { default as ArticleDataAdd } from './SpiritDataActions/ArticleDataAdd'
+export { default as ArticleDataEdit } from './SpiritDataActions/ArticleDataEdit'

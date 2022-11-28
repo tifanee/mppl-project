@@ -1,0 +1,30 @@
+###
+GET http://localhost:8000/api/articles
+
+###
+GET http://localhost:8000/api/articles/637a25715a8728b11c913004
+
+###
+POST http://localhost:8000/api/articles
+Content-Type: application/json
+
+{
+    "title": "Kumpulan Galeri SPIRIT Minggu Pertama",
+    "author": "Mike Rifle Astra Zenewa",
+    "body": "test",
+    "cover_image": "https://i.ibb.co/S3VmDzC/tes3.png",
+    "is_published": true,
+    "created_date": "21 Oktober 2022",
+    "published_date": "21 Oktober 2022"
+}
+
+###
+PATCH http://localhost:8000/api/articles/637a25715a8728b11c913004
+Content-Type: application/json
+
+{
+    "body": "Blandit ut nisl faucibus mauris. Rhoncus blandit tempus et non quam a tincidunt sapien. Velit felis ultrices aliquam in consectetur semper ultrices est vulputate. Tempor sagittis ac sagittis convallis lectus egestas tellus suspendisse sociis. Fermentum vitae mi eget sed ut non consequat. Eu adipiscing magna volutpat mi ut sagittis ipsum. Varius in fermentum ultricies ipsum quis. Netus elit dolor varius id. Mattis sagittis tellus at vehicula nunc. Dignissim lacinia sit euismod duis tincidunt duis nibh. Viverra nulla scelerisque tristique egestas. At magna et amet sagittis dictum ultrices non nam porttitor. Blandit ut nisl faucibus mauris. Rhoncus blandit tempus et non quam a tincidunt sapien. Velit felis ultrices aliquam in consectetur semper ultrices est vulputate. Tempor sagittis ac sagittis convallis lectus egestas tellus suspendisse sociis. Fermentum vitae mi eget sed ut non consequat. Eu adipiscing magna volutpat mi ut sagittis ipsum. Varius in fermentum ultricies ipsum quis. Netus elit dolor varius id. Mattis sagittis tellus at vehicula nunc. Dignissim lacinia sit euismod duis tincidunt duis nibh. Viverra nulla scelerisque tristique egestas. At magna et amet sagittis dictum ultrices non nam porttitor."
+}
+
+###
+DELETE http://localhost:8000/api/articles/6378a2aa3524b34eaf7e16b5

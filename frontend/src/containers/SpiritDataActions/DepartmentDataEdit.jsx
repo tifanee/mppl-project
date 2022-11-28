@@ -8,9 +8,9 @@ const DepartmentDataEdit = () => {
     const [dept_name, set_dept_name] = useState('')
     const [dept_code, set_dept_code] = useState('')
     const [dept_image, set_dept_image] = useState('')
-    const [gold_medal_count, set_gold_medal_count] = useState(null)
-    const [silver_medal_count, set_silver_medal_count] = useState(null)
-    const [bronze_medal_count, set_bronze_medal_count] = useState(null)
+    const [gold_medal_count, set_gold_medal_count] = useState(0)
+    const [silver_medal_count, set_silver_medal_count] = useState(0)
+    const [bronze_medal_count, set_bronze_medal_count] = useState(0)
 
     const navigate = useNavigate()
     const {id} = useParams()
@@ -58,7 +58,7 @@ const DepartmentDataEdit = () => {
                     <input 
                         type="text" 
                         className='input'
-                        value={dept_name}
+                        value={dept_name == null ? '' : dept_name}
                         onChange={(e) => set_dept_name(e.target.value)}
                         placeholder='Nama Departemen'
                     />
@@ -83,7 +83,7 @@ const DepartmentDataEdit = () => {
                         type="text" 
                         className='input'
                         value={dept_image}
-                        onChange={(e) => set_dept_image(e.target.value)}
+                        onChange={(e) => e.target.value === ' ' ? set_dept_image('https://i.ibb.co/4436fv8/spirit-department.png') : set_dept_image(e.target.value)}
                         placeholder='Gambar Departemen'
                     />
                 </div>
