@@ -24,7 +24,7 @@ const KontingenContainer = () => {
 
     const kontingenFiltered = (
         participants.filter(tag => {
-        return tag.department.toLowerCase().includes(listTag.listName?.toLowerCase())
+            return tag.department.toLowerCase().includes(listTag.listName?.toLowerCase())
         })
         .sort((a,b) => a.name.localeCompare(b.name))
     )
