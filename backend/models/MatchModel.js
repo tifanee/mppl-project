@@ -49,6 +49,9 @@ const Match = mongoose.Schema({
     athletes_team2: {
         type: Array
     },
+    comment_list: {
+        type: Array
+    }
 })
 
 export default mongoose.model('Matchs', Match)
