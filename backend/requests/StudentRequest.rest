@@ -1,0 +1,26 @@
+GET http://localhost:8000/api/students
+
+###
+GET http://localhost:8000/api/students/6385c68fc745a4c046c84f7e
+
+###
+POST http://localhost:8000/api/students
+Content-Type: application/json
+
+{
+    "username": "tes1",
+    "comment": "https://i.ibb.co/4FDX4Nb/tes2.png",
+    "match_id": "6384a90b1171973cb24fa046"
+}
+
+###
+PATCH http://localhost:8000/api/students/6385c6e2dad996cc0d43aef5
+Content-Type: application/json
+
+{
+    "match_id": "6384a90b1171973cb24fa046"
+}
+
+###
+DELETE  http://localhost:8000/api/students/6378cc3ebf6bb56ed48c038b
+Content-Type: application/json

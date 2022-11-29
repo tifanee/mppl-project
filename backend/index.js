@@ -23,6 +23,7 @@ import MatchRoute from './routes/MatchRoute.js'
 import ContestRoute from './routes/ContestRoute.js'
 import ArticleRoute from './routes/ArticleRoute.js'
 import Admin from './routes/AdminRoute.js'
+import Student from './routes/StudentRoute.js'
 
 const app = express()
 connectDB()
@@ -40,6 +41,7 @@ app.use('/api', MatchRoute)
 app.use('/api', ContestRoute)
 app.use('/api', ArticleRoute)
 app.use('/api', Admin)
+app.use('/api', Student)
 
 if(process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../frontend/build')))

@@ -16,8 +16,8 @@ Content-Type: application/json
     "dept_image1": "https://i.ibb.co/S3VmDzC/tes3.png",
     "dept_image2": "https://i.ibb.co/S3VmDzC/tes3.png",
     "location": "Gymnasium t1",
-    # "is_finished": false,
-    # "score_result": [1, 2],
+    "is_finished": false,
+    "score_result": [1, 2],
     "time": "18:00",
     "day": "Senin",
     "date": "26 Oktober 2022"

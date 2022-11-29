@@ -49,7 +49,7 @@ const Match = mongoose.Schema({
     athletes_team2: {
         type: Array
     },
-    comment_list: {
+    comments_list: {
         type: Array
     }
 })

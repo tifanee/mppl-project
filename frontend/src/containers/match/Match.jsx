@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import './match.css'
 
-import { MatchResult, MatchSquad } from '../../components/index'
+import { MatchResult, MatchSquad, Comment, CommentList } from '../../components/index'
 
 const MatchDetail = () => {
   const params = useParams()
@@ -23,6 +23,8 @@ const MatchDetail = () => {
     <div className='section__padding'>
       <MatchResult data={matchs}/>
       <MatchSquad data={matchs}/>
+      <Comment id={params.id}/>
+      <CommentList data={matchs}/>
     </div>
   )
 }

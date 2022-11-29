@@ -13,6 +13,8 @@ export { default as SeniJadwal } from './jadwal/SeniJadwal'
 export { default as Participant } from './participant/Participant'
 export { default as MatchResult } from './matchResult/MatchResult'
 export { default as MatchSquad } from './matchSquad/MatchSquad'
+export { default as Comment } from './comment/Comment'
+export { default as CommentList } from './commentList/CommentList'
 export { default as PressReleaseCard } from './pressReleaseCard/PressReleaseCard'
 
 export { default as NavbarAdmin } from './navbar/NavbarAdmin'
