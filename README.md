@@ -1,4 +1,4 @@
-**(Silakan beralih ke branch Main untuk melihat *source code*)**
+**(Silakan beralih ke *branch* 'main' untuk melihat *source code*)**
 
 # SPIRIT-APP (Sistem Informasi Terpadu SPIRIT FMIPA IPB)
 ### Proyek MPPL R1 Kelompok 07 Ilmu Komputer IPB Semester 7 (2022)
