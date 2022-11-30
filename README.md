@@ -85,25 +85,31 @@ Menurut pendapat ahli, Scrum sangat cocok diterapkan pada proyek perangkat lunak
 
 ## Our Trello
 https://ipb.link/spiritapp-trello
+
 ![trello-snapshot](https://user-images.githubusercontent.com/77919010/204895209-e4fbafac-bd2f-4f44-a1c3-2da6932016f3.jpg)
 
 ## Our Design System and Figma
 https://ipb.link/spiritapp-figma
+
 ![design-system-spirit](https://user-images.githubusercontent.com/77919010/204895354-99742231-f9ee-4251-968c-2b48d9141566.png)
 ![figma-snapshot](https://user-images.githubusercontent.com/77919010/204895525-bc75f604-5270-4e04-b321-41f5ac9f63f2.png)
 
 ## Use Case Diagram
 https://ipb.link/spiritapp-usecase
+
 ![UseCaseDiagram MPPL07 Final](https://user-images.githubusercontent.com/77919010/204895680-2480d15d-3b62-465f-8527-30d84a62340c.jpg)
 
 ## Activity Diagram
 Seluruh Activity Diagram pada proyek ini dapat dilihat pada link di bawah ini.
+
 https://ipb.link/spiritapp-activity
 
 ## Entity Relationship Diagram
 https://ipb.link/spiritapp-erd
+
 ![ERD MPPL07 Final](https://user-images.githubusercontent.com/77919010/204896064-767138ea-ad60-41c0-9789-3da54db59584.jpg)
 
 ## Test Cases Sheet
 Seluruh test case pada proyek ini dapat dilihat pada link di bawah ini.
+
 https://ipb.link/spiritapp-testcases
