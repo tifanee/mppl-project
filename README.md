@@ -6,7 +6,7 @@ SPIRIT-APP merupakan **sistem informasi searah kepada publik yang diperbarui sec
 
 Anggota dan Peran Kelompok 07
 | No |           Nama          |    NIM    |        Role        |
-|:--:|:-----------------------:|:---------:|:------------------:|
+|:--:|-------------------------|:---------:|:------------------:|
 | 1  | Laudza Muhammad Afin T. | G64190052 | Project Manager    |
 | 2  | Tiffanee Anindhita      | G64190080 | UI/UX Designer     |
 | 3  | Risda Awalia            | G64190106 | System Analyst     |
