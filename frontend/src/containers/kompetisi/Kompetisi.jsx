@@ -8,13 +8,13 @@ import seniImage from '../../assets/kompetisi/kompetisi-seni.jpeg'
 const kompetisiData = [
   {
     type: 'Olahraga',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    text: 'Kompetisi olahraga dan seni terbesar di FMIPA sudah di depan mata. Gimana nih persiapan setiap departemen kalian? Pasti sudah mempersiapkan yang terbaik dong dan sudah pasti siap untuk menjadi sang juara! Salah satu cabang yang diperlombakan dalam SPIRIT 2022 ini adalah cabang olahraga. Cabang olahraga dalam SPIRIT 2022 ini terbagi lagi menjadi dua, yaitu SPORT dan E-SPORT. Jangan lupa persiapkan jagoan departemenmu, ya! Sampai jumpa!',
     kompetisiImage: olahragaImage,
     contentLink: '/kompetisi-olahraga'
   },
   {
     type: 'Seni',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    text: 'Kompetisi olahraga dan seni terbesar di FMIPA sudah di depan mata. Gimana nih persiapan setiap departemen kalian? Pasti sudah mempersiapkan yang terbaik dong dan sudah pasti siap untuk menjadi sang juara! Salah satu cabang yang diperlombakan dalam SPIRIT 2022 ini adalah cabang seni. Jangan lupa persiapkan jagoan departemenmu, ya! Sampai jumpa!',
     kompetisiImage: seniImage,
     contentLink: '/kompetisi-seni'
   }
